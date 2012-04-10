@@ -13,6 +13,7 @@
 		26C920F715342DA5009B6DB3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 26C920F515342DA5009B6DB3 /* Credits.rtf */; };
 		26C920FA15342DA5009B6DB3 /* CZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C920F915342DA5009B6DB3 /* CZAppDelegate.m */; };
 		26C920FD15342DA5009B6DB3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C920FB15342DA5009B6DB3 /* MainMenu.xib */; };
+		26C9210515343175009B6DB3 /* CZBadgeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9210415343175009B6DB3 /* CZBadgeWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +22,16 @@
 		26C920E915342DA5009B6DB3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		26C920EA15342DA5009B6DB3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		26C920EB15342DA5009B6DB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		26C920EE15342DA5009B6DB3 /* Badge-Info.plist */ = {isa = PBXFileReference; path = "Badge-Info.plist"; sourceTree = "<group>"; };
+		26C920EE15342DA5009B6DB3 /* Badge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Badge-Info.plist"; sourceTree = "<group>"; };
 		26C920F015342DA5009B6DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26C920F215342DA5009B6DB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		26C920F415342DA5009B6DB3 /* Badge-Prefix.pch */ = {isa = PBXFileReference; path = "Badge-Prefix.pch"; sourceTree = "<group>"; };
+		26C920F415342DA5009B6DB3 /* Badge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Badge-Prefix.pch"; sourceTree = "<group>"; };
 		26C920F615342DA5009B6DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		26C920F815342DA5009B6DB3 /* CZAppDelegate.h */ = {isa = PBXFileReference; path = CZAppDelegate.h; sourceTree = "<group>"; };
+		26C920F815342DA5009B6DB3 /* CZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZAppDelegate.h; sourceTree = "<group>"; };
 		26C920F915342DA5009B6DB3 /* CZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZAppDelegate.m; sourceTree = "<group>"; };
 		26C920FC15342DA5009B6DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		26C9210315343175009B6DB3 /* CZBadgeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZBadgeWindowController.h; sourceTree = "<group>"; };
+		26C9210415343175009B6DB3 /* CZBadgeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZBadgeWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				26C920F815342DA5009B6DB3 /* CZAppDelegate.h */,
 				26C920F915342DA5009B6DB3 /* CZAppDelegate.m */,
 				26C920FB15342DA5009B6DB3 /* MainMenu.xib */,
+				26C9210315343175009B6DB3 /* CZBadgeWindowController.h */,
+				26C9210415343175009B6DB3 /* CZBadgeWindowController.m */,
 				26C920ED15342DA5009B6DB3 /* Supporting Files */,
 			);
 			path = Badge;
@@ -93,11 +98,11 @@
 		26C920ED15342DA5009B6DB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				26C920EE15342DA5009B6DB3 /* Badge-Info.plist */,
-				26C920EF15342DA5009B6DB3 /* InfoPlist.strings */,
 				26C920F215342DA5009B6DB3 /* main.m */,
 				26C920F415342DA5009B6DB3 /* Badge-Prefix.pch */,
+				26C920EE15342DA5009B6DB3 /* Badge-Info.plist */,
 				26C920F515342DA5009B6DB3 /* Credits.rtf */,
+				26C920EF15342DA5009B6DB3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			attributes = {
 				CLASSPREFIX = CZ;
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Coders Zone";
 			};
 			buildConfigurationList = 26C920DC15342DA4009B6DB3 /* Build configuration list for PBXProject "Badge" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -168,6 +174,7 @@
 			files = (
 				26C920F315342DA5009B6DB3 /* main.m in Sources */,
 				26C920FA15342DA5009B6DB3 /* CZAppDelegate.m in Sources */,
+				26C9210515343175009B6DB3 /* CZBadgeWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
